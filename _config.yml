@@ -4,7 +4,7 @@ description: 'Study blog' # write a nice description for your blog
 baseurl: '/hyodongnim' # the subpath of your site, e.g. /blog
 url: 'https://hyodongnim.github.io/' # the base hostname & protocol for your site http://www.example.com
 # google_analytics: 'UA-XXXXXX-X'
-#twitter_username: 'hyodongnim'
+twitter_username: null
 
 # Build settings
 markdown: kramdown
