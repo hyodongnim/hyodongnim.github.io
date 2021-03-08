@@ -14,3 +14,20 @@ permalink: '/:title/'
 gems: [jekyll-paginate]
 
 paginate: 10
+
+...
+...
+...
+
+# --- Navigation bar options --- #
+
+# List of links in the navigation bar
+
+navbar-links:
+  Category:
+    - Paper: "/category/Paper"
+    - Study: "/category/Study"
+
+...
+...
+...

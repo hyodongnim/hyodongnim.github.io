@@ -1,10 +1,18 @@
 ```html
-<div class="post-list">
-      {% assign category = page.title %}
-      {% for post in site.categories[category] %} <!-- 카테고리 조건 -->
-            <ul>
-              <!-- post 제목 나열 -->              
-            </ul>
-      {% endfor %}
-</div>
+---
+layout: default
+---
+<ul class="posts-list">  
+  {% assign category = page.category | default: page.title %}
+  <h4>Posts in {{ category }} ({{ site.categories[category].size }})</h4>
+  {% for post in site.categories[category] %}   
+    <li>
+      <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <small><time>
+        {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
+      </time></small>
+    </li>
+  {% endfor %}
+</ul>
 ```
+
