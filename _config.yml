@@ -1,7 +1,7 @@
 # Site settings
 title: Hyojoy's line
 description: 'Study blog' # write a nice description for your blog
-baseurl: '/hyodongnim' # the subpath of your site, e.g. /blog
+baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://hyodongnim.github.io/' # the base hostname & protocol for your site http://www.example.com
 # google_analytics: 'UA-XXXXXX-X'
 twitter_username: null
